@@ -19,6 +19,7 @@
 - Durable-Task-Schedulerのリポジトリをクローンする
 - ワーカーをビルドして起動
 - クライアントをビルドして起動
+- ダッシュボードで動作確認
 
 ## Durable Task Scheduler エミュレーターをpullする
 
@@ -71,9 +72,47 @@ git clone https://github.com/Azure-Samples/Durable-Task-Scheduler.git
 
 ## ワーカーをビルドして起動する
 
+以下のコマンドでDurable-Task-Schedulerのディレクトリに移動します。
+
+```bash
+cd Durable-Task-Scheduler
+```
+
+FanOutFanInのディレクトリに移動します。
+
+```bash
+cd samples/durable-task-sdks/dotnet/FanOutFanIn
+```
+
+まずはワーカーをビルドして起動します。
+
+```bash
+cd Worker
+dotnet build
+dotnet run
+```
+
 ## クライアントをビルドして起動する
 
+新しくターミナルを開き、以下のコマンドでFanOutFanInのディレクトリに移動します。
+
+```bash
+cd Durable-Task-Scheduler/samples/durable-task-sdks/dotnet/FanOutFanIn
+```
+
+以下のコマンドでクライアントをビルドして起動します。
+
+```bash
+cd Client
+dotnet build
+dotnet run
+```
+
+## ダッシュボードで動作確認
+
 ## まとめ
+
+#　ここから下は環境構築手順
 
 ## Azure Developer CLIのセットアップ
 
