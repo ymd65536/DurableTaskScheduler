@@ -61,6 +61,14 @@ GitHub Codespacesをブラウザ起動している場合は8082のポートに�
 
 ![dts-emulator-dashboard-vscode](images/dts-emulator-dashboard-vscode.png)
 
+## Durable-Task-Schedulerのリポジトリをクローンする
+
+以下のコマンドを実行して、Durable-Task-Schedulerのリポジトリをクローンします。
+
+```bash
+git clone https://github.com/Azure-Samples/Durable-Task-Scheduler.git
+```
+
 ## ワーカーをビルドして起動する
 
 ## クライアントをビルドして起動する
