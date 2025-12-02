@@ -6,7 +6,37 @@
 
 ## GitHub Codespacesの準備
 
-以下のリンクをクリックします。
+以下のリンクをクリックすると、GitHub Codespaces上でSpaceを起動できます。
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ymd65536/DurableTaskScheduler)
+
+## 環境チェック
+
+今回はDockerと.NETを使うので、以下のコマンドでバージョンを確認します。
+
+まずは、.NETのバージョンを確認します。
+
+```bash
+dotnet --version
+```
+
+実行結果
+
+```txt
+8.0.415
+```
+
+次に、Dockerのバージョンを確認します。
+
+```bash
+docker --version
+```
+
+実行結果
+
+```txt
+Docker version 28.5.1-1
+```
 
 ## 順番に起動してみる
 
