@@ -1,4 +1,10 @@
-# Azure Template Repo README
+# GitHub CodespacesでDurable Task Schedulerエミュレーターを起動してFanOutFanInを試す
+
+## はじめに
+
+## GitHub CodespacesでSpaceを起動する
+
+## まとめ
 
 ## Azure Developer CLIのセットアップ
 
