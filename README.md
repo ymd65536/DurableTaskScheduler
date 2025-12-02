@@ -59,6 +59,14 @@ az version
 az account list
 ```
 
+ロケーション間違えると以下のようなエラーが出るので注意してください。
+
+```
+(LocationNotAvailableForResourceType) The provided location 'eastus' is not available for resource type 'Microsoft.DurableTask/schedulers'. List of available regions for the resource type is 'northcentralus,westus2,northeurope,uksouth,swedencentral,australiaeast,centralus,eastasia,koreacentral,eastus2,brazilsouth,canadacentral,centralindia,francecentral,germanywestcentral,italynorth,japaneast,japanwest,norwayeast,polandcentral,southafricanorth,southeastasia,switzerlandnorth,uaenorth,westus,westus3'.
+Code: LocationNotAvailableForResourceType
+Message: The provided location 'eastus' is not available for resource type 'Microsoft.DurableTask/schedulers'. List of available regions for the resource type is 'northcentralus,westus2,northeurope,uksouth,swedencentral,australiaeast,centralus,eastasia,koreacentral,eastus2,brazilsouth,canadacentral,centralindia,francecentral,germanywestcentral,italynorth,japaneast,japanwest,norwayeast,polandcentral,southafricanorth,southeastasia,switzerlandnorth,uaenorth,westus,westus3'.
+```
+
 ## GitHub Codespacesの設定
 
 `.env`でシークレットを管理する場合、以下のコマンドでCodespacesにシークレットを設定します。
