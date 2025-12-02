@@ -2,13 +2,15 @@
 
 ## はじめに
 
-## GitHub CodespacesでSpaceを起動する
+この記事では、GitHub Codespaces上でDurable Task Schedulerエミュレーターを起動し、FanOutFanInサンプルを実行する手順を紹介します。
 
-まずは完成系の状態を見てみましょう。
+## GitHub Codespacesの準備
+
+以下のリンクをクリックします。
 
 ## 順番に起動してみる
 
-完成系を見たところで、どのような順番で起動するのかを確認してきたいと思います。
+では、どのような順番でDurable Task Schedulerエミュレーターを起動するのかを確認してきたいと思います。
 今回は.NETを使った方法を紹介します。
 
 順番としては以下のとおりです。
@@ -110,7 +112,27 @@ dotnet run
 
 ## ダッシュボードで動作確認
 
+Durable Task Scheduler エミュレーターのダッシュボードに戻って動作を確認します。
+
+`default`という名前のTask Hubをクリックします。
+
+![dts-1](images/dts-1.png)
+
+Task Hubs > default > Orchestrationsという形で表示されます。
+
+![dts-2](images/dts-2.png)
+
+Orchestrations IDをクリックします。
+
+![dts-3](images/dts-3.png)
+
+Orchestrationの詳細が表示されます。
+
+![dts-4](images/dts-4.png)
+
 ## まとめ
+
+GitHub Codespaces上でDurable Task Schedulerエミュレーターを起動し、FanOutFanInサンプルを実行する方法は以上です。Durable Task SchedulerはGitHub Codespaces上で試すことができるので、ぜひ活用してみてください。
 
 #　ここから下は環境構築手順
 
