@@ -67,6 +67,10 @@ Code: LocationNotAvailableForResourceType
 Message: The provided location 'eastus' is not available for resource type 'Microsoft.DurableTask/schedulers'. List of available regions for the resource type is 'northcentralus,westus2,northeurope,uksouth,swedencentral,australiaeast,centralus,eastasia,koreacentral,eastus2,brazilsouth,canadacentral,centralindia,francecentral,germanywestcentral,italynorth,japaneast,japanwest,norwayeast,polandcentral,southafricanorth,southeastasia,switzerlandnorth,uaenorth,westus,westus3'.
 ```
 
+## 参考
+
+- [クイック スタート: Durable Task SDK と Durable Task Scheduler を使用してアプリを作成する](https://learn.microsoft.com/ja-jp/azure/azure-functions/durable/durable-task-scheduler/quickstart-portable-durable-task-sdks?tabs=windows&pivots=csharp)
+
 ## GitHub Codespacesの設定
 
 `.env`でシークレットを管理する場合、以下のコマンドでCodespacesにシークレットを設定します。
