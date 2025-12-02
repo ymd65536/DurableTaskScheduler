@@ -4,6 +4,67 @@
 
 ## GitHub CodespacesでSpaceを起動する
 
+まずは完成系の状態を見てみましょう。
+
+## 順番に起動してみる
+
+完成系を見たところで、どのような順番で起動するのかを確認してきたいと思います。
+今回は.NETを使った方法を紹介します。
+
+順番としては以下のとおりです。
+
+- Durable Task Scheduler エミュレーターをpull
+- docker runでDurable Task Scheduler エミュレーターを起動
+- ダッシュボードにアクセスする
+- Durable-Task-Schedulerのリポジトリをクローンする
+- ワーカーをビルドして起動
+- クライアントをビルドして起動
+
+## Durable Task Scheduler エミュレーターをpullする
+
+以下のコマンドを実行して、Durable Task Scheduler エミュレーターのDockerイメージをpullします。
+
+```bash
+docker pull mcr.microsoft.com/dts/dts-emulator:latest
+```
+
+実行結果（一部抜粋）
+
+```txt
+Digest: sha256:ef0b75cab52358409dadc34b675d659e397729c0b68f4ea51b9afa5136072dfb
+Status: Downloaded newer image for mcr.microsoft.com/dts/dts-emulator:latest
+```
+
+## Durable Task Scheduler エミュレーターを起動する
+
+以下のコマンドを実行して、Durable Task Scheduler エミュレーターを起動します。
+
+```bash
+docker run --name dtsemulator -d -p 8080:8080 -p 8082:8082 mcr.microsoft.com/dts/dts-emulator:latest
+```
+
+実行結果（一部抜粋）
+
+```txt
+dbbf44836d36494ee4aafd9a7d9104eef008375881866053886c7f38ce9706a5
+```
+
+実行すると、上記のようなコンテナIDが表示されます。
+
+## ダッシュボードにアクセスする
+
+GitHub Codespacesをブラウザ起動している場合は8082のポートにアクセスすることで、Durable Task Scheduler エミュレーターのダッシュボードにアクセスできます。
+
+![dts-emulator-dashboard](images/dts-emulator-dashboard.png)
+
+※VSCodeから起動している場合は[http://127.0.0.1:8082/](http://127.0.0.1:8082/)にアクセスすることで、Durable Task Scheduler エミュレーターのダッシュボードにアクセスできます。
+
+![dts-emulator-dashboard-vscode](images/dts-emulator-dashboard-vscode.png)
+
+## ワーカーをビルドして起動する
+
+## クライアントをビルドして起動する
+
 ## まとめ
 
 ## Azure Developer CLIのセットアップ
